@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="160dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/firstNumTextView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/operatorTextView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="#FF9800"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/secondNumTextView"
+            android:paddingLeft="10dp"
+            android:layout_gravity="end"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="B"
+            android:textSize="50sp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/goButton"
+        android:background="@color/btnonboard"
+        android:layout_marginTop="60dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="TAP HERE FOR ANSWER"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="200dp"
+        android:background="#000000"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="ANSWER"
+        android:textSize="45sp" />
+
+
+
+
+
+</LinearLayout>
